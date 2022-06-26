@@ -1,0 +1,71 @@
+.notification_main {
+    display: flex;
+}
+
+.box {
+    flex: 6;
+}
+
+.box .main {
+    padding: 0.5rem 0;
+}
+
+
+.second_label {
+    margin-top: 30px;
+}
+
+.content input {
+    margin-top: 10px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.content button {
+    width: 100px;
+    margin-top: 20px;
+    height: 35px;
+    background-color: blue;
+    color: white;
+}
+
+.content div {
+    float: right;
+    display: inline-block;
+    width: 100px;
+    clear: both;
+
+    background-color: violet;
+
+}
+
+.content {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main_cont {
+    margin: 50px;
+    border: 0.5px solid rgb(230, 227, 227);
+}
+
+.main_cont h3 {
+    line-height: 50px;
+    margin-left: 20px;
+    height: 50px;
+}
+
+h1 {
+    padding: 20px;
+}
+
+.input_notification {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+
+}
+
+input {}

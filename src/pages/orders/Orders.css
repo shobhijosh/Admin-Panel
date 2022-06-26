@@ -1,0 +1,69 @@
+.ordersPage {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.allOrders {
+    display: flex;
+    justify-content: space-between;
+}
+
+.allOrders table {
+    text-align: center;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 80vw;
+}
+
+.allOrders table thead tr {
+    font-size: 14px;
+}
+
+.processing span,
+.shipped span,
+.refunded span,
+.completed span,
+.cancelled span {
+    color: #fff;
+    border-radius: 20px;
+    padding: 0.2rem 0.5rem;
+}
+
+.processing span {
+    background: #ff6e40;
+}
+
+.shipped span {
+    background: #293134;
+}
+
+.refunded span {
+    background-color: #faee42;
+}
+
+.completed span {
+    background-color: #05b171;
+}
+
+.cancelled span {
+    background-color: #ea4444;
+}
+
+#modal {
+    height: 200px;
+    width: 600px;
+    background-color: #fff;
+    position: absolute;
+    top: 202px;
+    left: 445px;
+    display: none;
+}
+
+.container {
+    /* opacity: 0.3; */
+    position: relative;
+}
