@@ -6,6 +6,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import OrdersTable from '../ordersTable/OrdersTable';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+import CloseIcon from '@mui/icons-material/Close';
+import EditIcon from '@mui/icons-material/Edit';
 import { NavLink } from 'react-router-dom';
 import './Orders.css'
 
@@ -14,16 +16,13 @@ const Orders = () => {
 		const modal = document.getElementById('modal');
 		const container = document.getElementById('bigContainer');
 		container.style.opacity = '0.3'
-		modal.style.display = 'block'
-		// if (modal.style.display = 'block') {
-		// 	document.addEventListener('click', (e) => {
-		// 		let clickInside = modal.contains(e.target)
-		// 		if (!clickInside) {
-		// 			container.style.opacity = '1'
-		// 			modal.style.display = 'none'
-		// 		}
-		// 	})
-		// }
+		modal.style.display = 'flex'
+	}
+	const modalClose = () => {
+		const modal = document.getElementById('modal');
+		const container = document.getElementById('bigContainer');
+		container.style.opacity = '1'
+		modal.style.display = 'none'
 	}
 	return (
 		<div className="main">
@@ -82,7 +81,27 @@ const Orders = () => {
 					</div>
 				</div>
 			</div>
-			<div id="modal"></div>
+			<div id="modal">
+				<h2>Edit Order</h2>
+				<div className="editFields">
+					<div className="nameFields">
+						<label htmlFor="personName">Name</label>
+						<input type="text" name="personName" id="personName" placeholder='John Doe' />
+					</div>
+					<div className="priceFields">
+						<label htmlFor="orderPrice">Price</label>
+						<input type="text" name="orderPrice" id="orderPrice" placeholder='$1000' />
+					</div>
+					<div className="statusFields">
+						<label htmlFor="orderStatus">Order</label>
+						<input type="text" name="orderStatus" id="orderStatus" placeholder='Shipped' />
+					</div>
+				</div>
+				<div className="editAndCloseBtn">
+					<div className="editBtn"><EditIcon /> Edit Order</div>
+					<div className="closeBtn" onClick={() => modalClose()}><CloseIcon /> Close</div>
+				</div>
+			</div>
 		</div>
 	)
 }

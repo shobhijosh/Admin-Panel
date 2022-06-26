@@ -54,16 +54,84 @@
 }
 
 #modal {
-    height: 200px;
+    /* height: 200px; */
     width: 600px;
     background-color: #fff;
     position: absolute;
-    top: 202px;
-    left: 445px;
+    /* top: 202px;
+    left: 445px; */
     display: none;
+    padding: 1rem;
+    /* display: flex; */
+    flex-direction: column;
+    row-gap: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .container {
     /* opacity: 0.3; */
     position: relative;
+}
+
+.editFields {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.nameFields,
+.priceFields,
+.statusFields {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.editAndCloseBtn {
+    display: flex;
+    column-gap: 20px;
+}
+
+#personName,
+#orderPrice,
+#orderStatus {
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+}
+
+#modal h2,
+.editAndCloseBtn {
+    align-self: center;
+}
+
+.editBtn,
+.closeBtn {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.editBtn {
+    background-color: #05b171;
+    transition: all 0.1s linear;
+}
+
+.closeBtn {
+    background-color: #ea4444;
+    transition: all 0.1s linear;
+}
+
+.editBtn:hover {
+    background-color: #049660;
+}
+
+.closeBtn:hover {
+    background-color: #c73a3a;
 }

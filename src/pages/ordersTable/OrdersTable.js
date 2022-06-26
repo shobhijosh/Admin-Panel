@@ -3,9 +3,7 @@ import EditIcon from '@mui/icons-material/Edit';
 
 const OrdersTable = ({ modalOpen }) => {
     const functio = () => {
-        // const edit = document.getElementById('editSvg');
         modalOpen()
-        // edit.addEventListener('click', modalOpen())
     }
     return (
         <table>
@@ -37,7 +35,7 @@ const OrdersTable = ({ modalOpen }) => {
                         <span>Processing</span>
                     </td>
                     <td >
-                        <div className="editIcon" id='editSvg' onClick={() => functio(this)}><EditIcon /></div>
+                        <div className="editIcon" onClick={() => functio(this)}><EditIcon /></div>
                     </td>
                 </tr>
                 <tr>
@@ -53,7 +51,7 @@ const OrdersTable = ({ modalOpen }) => {
                         <span>Shipped</span>
                     </td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon" onClick={() => functio(this)}><EditIcon /></div>
                     </td>
                 </tr>
                 <tr>
@@ -69,7 +67,7 @@ const OrdersTable = ({ modalOpen }) => {
                         <span>Completed</span>
                     </td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon" onClick={() => functio(this)}><EditIcon /></div>
                     </td>
                 </tr>
                 <tr>
@@ -85,7 +83,7 @@ const OrdersTable = ({ modalOpen }) => {
                         <span>Refunded</span>
                     </td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon" onClick={() => functio(this)}><EditIcon /></div>
                     </td>
                 </tr>
                 <tr>
@@ -101,7 +99,7 @@ const OrdersTable = ({ modalOpen }) => {
                         <span>Cancelled</span>
                     </td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon" onClick={() => functio(this)}><EditIcon /></div>
                     </td>
                 </tr>
                 <tr>
@@ -117,7 +115,7 @@ const OrdersTable = ({ modalOpen }) => {
                         <span>Processing</span>
                     </td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon" onClick={() => functio(this)}><EditIcon /></div>
                     </td>
                 </tr>
                 <tr>
@@ -133,7 +131,7 @@ const OrdersTable = ({ modalOpen }) => {
                         <span>Shipped</span>
                     </td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon" onClick={() => functio(this)}><EditIcon /></div>
                     </td>
                 </tr>
                 <tr>
@@ -149,7 +147,7 @@ const OrdersTable = ({ modalOpen }) => {
                         <span>Completed</span>
                     </td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon" onClick={() => functio(this)}><EditIcon /></div>
                     </td>
                 </tr>
                 <tr>
@@ -165,7 +163,7 @@ const OrdersTable = ({ modalOpen }) => {
                         <span>Refunded</span>
                     </td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon" onClick={() => functio(this)}><EditIcon /></div>
                     </td>
                 </tr>
                 <tr>
@@ -181,7 +179,7 @@ const OrdersTable = ({ modalOpen }) => {
                         <span>Cancelled</span>
                     </td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon" onClick={() => functio(this)}><EditIcon /></div>
                     </td>
                 </tr>
 
