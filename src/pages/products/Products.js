@@ -10,8 +10,22 @@ import SearchIcon from '@mui/icons-material/Search';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import './Products.css'
 import ProductsTable from '../productsTable/ProductsTable';
+import CloseIcon from '@mui/icons-material/Close';
+import EditIcon from '@mui/icons-material/Edit';
 
 const Products = () => {
+    const modalOpen = () => {
+        const modal = document.getElementById('modal');
+        const container = document.getElementById('Container');
+        container.style.opacity = '0.3'
+        modal.style.display = 'flex'
+    }
+    const modalClose = () => {
+        const modal = document.getElementById('modal');
+        const container = document.getElementById('Container');
+        container.style.opacity = '1'
+        modal.style.display = 'none'
+    }
     const [readMore, setReadMore] = useState(true)
     const [readMore1, setReadMore1] = useState(true)
     const [readMore2, setReadMore2] = useState(true)
@@ -19,7 +33,7 @@ const Products = () => {
     return (
         <div className="main">
             <Sidebar />
-            <div className="container">
+            <div className="container" id="Container">
                 <Navbar />
                 <div className="productsPage">
                     <div className="sortAndActions">
@@ -58,7 +72,7 @@ const Products = () => {
                         </div>
                     </div>
                     <div className="productsAndFilter">
-                        <ProductsTable />
+                        <ProductsTable modalOpen={modalOpen} />
                         <div className="filterProducts">
                             <h2>Filter Products</h2>
                             <div className="filters">
@@ -165,6 +179,41 @@ const Products = () => {
                         <NavLink to='#'>3</NavLink>
                         <KeyboardDoubleArrowRightIcon />
                     </div>
+                </div>
+            </div>
+
+            <div id="modal">
+                <h2>Edit Order</h2>
+                <div className="editFields2">
+                    <div className="editProductName">
+                        <label htmlFor="modalProduct">Product Name</label>
+                        <input type="text" name="modalProduct" id="modalProduct" placeholder="Ex-Iphone13" />
+                    </div>
+                    <div className="editProductCate">
+                        <label htmlFor="modalCategory">Category</label>
+                        <select name="category" id="modalCategory">
+                            <option value="select">Select Catgeory</option>
+                            <option value="NewArrival">New Arrival</option>
+                            <option value="MostPopular">Most Popular</option>
+                            <option value="Trending">Trending</option>
+                        </select>
+                    </div>
+                    <div className="editProductExpiry">
+                        <label htmlFor="modalExpiryDate">Expiry Date</label>
+                        <input type="text" name="modalExpiryDate" id="modalExpiryDate" placeholder="Ex-No Expiry Date" />
+                    </div>
+                    <div className="editStockUnits">
+                        <label htmlFor="modalStock">Units in Stock</label>
+                        <input type="text" name="modalStock" id="modalStock" placeholder="Ex-100" />
+                    </div>
+                    <div className="editProductPrice">
+                        <label htmlFor="modalPrice">Price</label>
+                        <input type="text" name="modalPrice" id="modalPrice" placeholder="Ex-$750" />
+                    </div>
+                </div>
+                <div className="editAndCloseBtn">
+                    <div className="editBtn"><EditIcon /> Edit Order</div>
+                    <div className="closeBtn" onClick={() => modalClose()}><CloseIcon /> Close</div>
                 </div>
             </div>
         </div>

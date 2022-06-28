@@ -42,8 +42,8 @@ const Home = () => {
 							<thead>
 								<tr className="head">
 									<td>
-										<input type="checkbox" name="checkAll" id="checkAll" />
-										<label htmlFor="checkAll"></label>
+										<input type="checkbox" name="check" />
+										<label htmlFor="check"></label>
 									</td>
 									<td>PHOTO</td>
 									<td>NAME</td>
@@ -55,8 +55,8 @@ const Home = () => {
 							<tbody>
 								<tr>
 									<td>
-										<input type="checkbox" name="checkOne" id="checkOne" />
-										<label htmlFor="checkOne"></label>
+										<input type="checkbox" name="check" />
+										<label htmlFor="check"></label>
 									</td>
 									<td>
 										<img src={cookie} alt="cookie" />
@@ -84,8 +84,8 @@ const Home = () => {
 								</tr>
 								<tr>
 									<td>
-										<input type="checkbox" name="checkTwo" id="checkTwo" />
-										<label htmlFor="checkTwo"></label>
+										<input type="checkbox" name="check" />
+										<label htmlFor="check"></label>
 									</td>
 									<td>
 										<img src={glass} alt="glass" />
@@ -113,8 +113,8 @@ const Home = () => {
 								</tr>
 								<tr>
 									<td>
-										<input type="checkbox" name="checkThree" id="checkThree" />
-										<label htmlFor="checkThree"></label>
+										<input type="checkbox" name="check" />
+										<label htmlFor="check"></label>
 									</td>
 									<td>
 										<img src={headPhone} alt="headphone" />
@@ -142,8 +142,8 @@ const Home = () => {
 								</tr>
 								<tr>
 									<td>
-										<input type="checkbox" name="checkFour" id="checkFour" />
-										<label className='label4' htmlFor="checkFour"></label>
+										<input type="checkbox" name="check" />
+										<label className='label4' htmlFor="check"></label>
 									</td>
 									<td>
 										<img src={perfume} alt="perfume" />

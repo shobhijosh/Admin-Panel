@@ -1,4 +1,4 @@
-.ordersPage {
+.sellersPage {
     padding: 1rem;
     margin: 1rem;
     display: flex;
@@ -6,12 +6,12 @@
     row-gap: 25px;
 }
 
-.allOrders {
+.allSellers {
     display: flex;
     justify-content: space-between;
 }
 
-.allOrders table {
+.allSellers table {
     text-align: center;
     background: #fff;
     padding: 1rem;
@@ -19,43 +19,29 @@
     width: 80vw;
 }
 
-.allOrders table thead tr {
+.allSellers table thead tr {
     font-size: 14px;
 }
 
-.processing span,
-.shipped span,
-.refunded span,
-.completed span,
-.cancelled span {
+
+
+.activeSeller span {
+    background-color: #05b171;
+}
+
+.passive span {
+    background-color: #ea4444;
+}
+
+.activeSeller span,
+.passive span {
     color: #fff;
     border-radius: 20px;
     padding: 0.2rem 0.5rem;
 }
 
-.processing span {
-    background: #ff6e40;
-}
-
-.shipped span {
-    background: #293134;
-}
-
-.refunded span {
-    background-color: #faee42;
-}
-
-.completed span {
-    background-color: #05b171;
-}
-
-.cancelled span {
-    background-color: #ea4444;
-}
-
-#modal {
-    /* height: 200px; */
-    width: 600px;
+#modal1 {
+    width: 900px;
     background-color: #fff;
     /* position: absolute; */
     position: fixed;
@@ -76,33 +62,24 @@
     position: relative;
 }
 
-.editFields {
+#modal1 .editFields1 {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    column-gap: 15px;
     row-gap: 15px;
 }
 
-.nameFields,
-.priceFields,
-.statusFields {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-}
+
 
 .editAndCloseBtn {
     display: flex;
     column-gap: 20px;
 }
 
-#personName,
-#orderPrice,
-#orderStatus {
-    padding: 0.5rem 1rem;
-    font-size: 18px;
-}
 
-#modal h2,
+
+#modal1 h2,
 .editAndCloseBtn {
     align-self: center;
 }
@@ -135,4 +112,60 @@
 
 .closeBtn:hover {
     background-color: #c73a3a;
+}
+
+.addSellerBtn a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    background: #4747fd;
+    padding: 0.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.addSellerBtn {
+    align-self: center;
+}
+
+.addSellerBtn a:hover {
+    background-color: #0000fd;
+}
+
+.editSellerName,
+.editSellerCate,
+.editSellerGender,
+.editSellerAge,
+.editSellerZone,
+.editSellerWoreda,
+.editSellerKebele,
+.editSellerNumber,
+.editSellerAddiNumber,
+.editEmail,
+.editSellerBookNum,
+.editSellerTinNum {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 21vw;
+}
+
+#modalSeller,
+#modalCategory,
+#modalGender,
+#modalAge,
+#modalZone,
+#modalWoreda,
+#modalKebele,
+#modalNumber,
+#modalAddiNumber,
+#modalEmal,
+#modalBookNum,
+#modalTin {
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    outline: none;
 }

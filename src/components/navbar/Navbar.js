@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-
+import { Link } from 'react-router-dom'
 import SearchIcon from '@mui/icons-material/Search';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 
@@ -9,19 +9,21 @@ const Navbar = () => {
         <div className="main">
             <div className="left">
                 <input placeholder="Search.."></input>
-                <SearchIcon style={{ color: '#fff' }} />
+                <SearchIcon style={{ cursor: 'pointer' }} />
             </div>
             <div className="right">
-                <div className="icon">
+                {/* <div className="icon">
                     <DarkModeOutlinedIcon />
 
-                </div>
-                <div className="icon">
-                    <NotificationsNoneIcon />
-                    <div className="notificationNumber">
-                        1
+                </div> */}
+                <Link to='/notification'>
+                    <div className="icon">
+                        <NotificationsNoneIcon />
+                        <div className="notificationNumber">
+                            1
+                        </div>
                     </div>
-                </div>
+                </Link>
             </div>
         </div>
     );

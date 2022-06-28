@@ -38,10 +38,12 @@ const Sidebar = () => {
 							<span className="spanList">Products</span>
 						</li>
 					</Link>
-					<li className="item">
-						<StoreMallDirectoryIcon className="icon" />
-						<span className="spanList">Sellers</span>
-					</li>
+					<Link to='/sellers'>
+						<li className="item">
+							<StoreMallDirectoryIcon className="icon" />
+							<span className="spanList">Sellers</span>
+						</li>
+					</Link>
 					<li className="item">
 						<PersonOutlineIcon className="icon" />
 						<span className="spanList">Earnings</span>

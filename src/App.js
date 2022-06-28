@@ -12,6 +12,9 @@ import Users from "./pages/users/Users";
 import Order from "./pages/order/Order";
 import Login from "./components/login/Login";
 import GoToTop from "./components/GoToTop";
+import PushNotification from "./pages/notification/PushNotification";
+import Sellers from "./pages/sellers/Sellers";
+import AddSeller from "./pages/addSeller/AddSeller";
 
 function App() {
   return (
@@ -24,12 +27,15 @@ function App() {
           <Route path=":orderId" element={<Order />} />
         </Route>
         <Route path="notification" element={<Notification />} />
+        <Route path="notification/push" element={<PushNotification />} />
         <Route path="categories" element={<Categories />} />
         <Route path="products">
           <Route index element={<Products />} />
           {/* <Route path=":productId" element={<Product />} /> */}
         </Route>
         <Route path='products/addProduct' element={<Product />} />
+        <Route path="sellers" element={<Sellers />} />
+        <Route path="sellers/addSeller" element={<AddSeller />} />
         <Route path="users" element={<Users />} />
         <Route path="login" element={<Login />} />
       </Routes>

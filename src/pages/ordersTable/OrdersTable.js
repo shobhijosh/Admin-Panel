@@ -10,8 +10,8 @@ const OrdersTable = ({ modalOpen }) => {
             <thead>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check5" id="check5" />
-                        <label htmlFor="check5"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td>ID</td>
                     <td>NAME</td>
@@ -24,8 +24,8 @@ const OrdersTable = ({ modalOpen }) => {
             <tbody>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check6" id="check6" />
-                        <label htmlFor="check6"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#3210</td>
                     <td>Cortie Gemson</td>
@@ -40,8 +40,8 @@ const OrdersTable = ({ modalOpen }) => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check6" id="check6" />
-                        <label htmlFor="check6"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#3210</td>
                     <td>Mathilde Tumilson</td>
@@ -56,8 +56,8 @@ const OrdersTable = ({ modalOpen }) => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check6" id="check6" />
-                        <label htmlFor="check6"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#3210</td>
                     <td>Audrye Heaford</td>
@@ -72,8 +72,8 @@ const OrdersTable = ({ modalOpen }) => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check6" id="check6" />
-                        <label htmlFor="check6"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#3210</td>
                     <td>Brantley Mell</td>
@@ -88,8 +88,8 @@ const OrdersTable = ({ modalOpen }) => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check6" id="check6" />
-                        <label htmlFor="check6"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#3210</td>
                     <td>Dominique Enriques</td>
@@ -104,8 +104,8 @@ const OrdersTable = ({ modalOpen }) => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check6" id="check6" />
-                        <label htmlFor="check6"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#3210</td>
                     <td>Cortie Gemson</td>
@@ -120,8 +120,8 @@ const OrdersTable = ({ modalOpen }) => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check6" id="check6" />
-                        <label htmlFor="check6"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#3210</td>
                     <td>Mathilde Tumilson</td>
@@ -136,8 +136,8 @@ const OrdersTable = ({ modalOpen }) => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check6" id="check6" />
-                        <label htmlFor="check6"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#3210</td>
                     <td>Audrye Heaford</td>
@@ -152,8 +152,8 @@ const OrdersTable = ({ modalOpen }) => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check6" id="check6" />
-                        <label htmlFor="check6"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#3210</td>
                     <td>Brantley Mell</td>
@@ -168,8 +168,8 @@ const OrdersTable = ({ modalOpen }) => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check6" id="check6" />
-                        <label htmlFor="check6"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#3210</td>
                     <td>Dominique Enriques</td>

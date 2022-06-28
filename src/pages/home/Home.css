@@ -129,7 +129,8 @@ tbody tr td {
 	background-color: #f5f4f4;
 	padding: 0.5rem;
 	border-radius: 10px;
-	left: 464px;
+	left: 290px;
+	bottom: 170px;
 	z-index: 3;
 }
 
@@ -139,8 +140,8 @@ tbody tr td {
 	background-color: #f5f4f4;
 	padding: 0.5rem;
 	border-radius: 10px;
-	left: 464px;
-	bottom: -360px;
+	left: 290px;
+	bottom: 95px;
 	z-index: 3;
 }
 
@@ -150,8 +151,8 @@ tbody tr td {
 	background-color: #f5f4f4;
 	padding: 0.5rem;
 	border-radius: 10px;
-	left: 464px;
-	bottom: -432px;
+	left: 290px;
+	bottom: 22px;
 	z-index: 3;
 }
 
@@ -161,8 +162,8 @@ tbody tr td {
 	background-color: #f5f4f4;
 	padding: 0.5rem;
 	border-radius: 10px;
-	left: 464px;
-	bottom: -362px;
+	left: 290px;
+	bottom: 94px;
 	z-index: 3;
 }
 

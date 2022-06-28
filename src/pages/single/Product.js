@@ -85,7 +85,7 @@ const Product = () => {
 								<input type="text" name="product" id="product" placeholder="Ex-Iphone13" />
 							</div>
 							<div className="productDes">
-								<label htmlFor="">Description</label>
+								<label htmlFor="description">Description</label>
 								<textarea name="description" id="description" rows='3' placeholder="Ex-The iPhone 13 models come in 5.4 and 6.1-inch sizes, with the 5.4-inch iPhone 13 Pro positioned as Apple's smallest iPhone"></textarea>
 							</div>
 							<div className="productCate">

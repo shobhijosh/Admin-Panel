@@ -6,14 +6,17 @@ import perfume from '../home/perfume.jpg'
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-const ProductsTable = () => {
+const ProductsTable = ({ modalOpen }) => {
+    const functio = () => {
+        modalOpen()
+    }
     return (
         <table>
             <thead>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check5" id="check5" />
-                        <label htmlFor="check5"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td>ID</td>
                     <td>PHOTO</td>
@@ -28,8 +31,8 @@ const ProductsTable = () => {
             <tbody>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check6" id="check6" />
-                        <label htmlFor="check6"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#1</td>
                     <td>
@@ -40,7 +43,7 @@ const ProductsTable = () => {
                     <td>$4990</td>
                     <td>02/03/2021</td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon"><EditIcon onClick={() => functio(this)} /></div>
                     </td>
                     <td>
                         <div className="deleteIcon"><DeleteIcon /></div>
@@ -48,8 +51,8 @@ const ProductsTable = () => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check7" id="check7" />
-                        <label htmlFor="check7"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#2</td>
                     <td>
@@ -60,7 +63,7 @@ const ProductsTable = () => {
                     <td>$8700</td>
                     <td>24/04/2022</td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon"><EditIcon onClick={() => functio(this)} /></div>
                     </td>
                     <td>
                         <div className="deleteIcon"><DeleteIcon /></div>
@@ -68,8 +71,8 @@ const ProductsTable = () => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check8" id="check8" />
-                        <label htmlFor="check8"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#3</td>
                     <td>
@@ -80,7 +83,7 @@ const ProductsTable = () => {
                     <td>$7020</td>
                     <td>12/08/2022</td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon"><EditIcon onClick={() => functio(this)} /></div>
                     </td>
                     <td>
                         <div className="deleteIcon"><DeleteIcon /></div>
@@ -88,8 +91,8 @@ const ProductsTable = () => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check9" id="check9" />
-                        <label htmlFor="check9"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#4</td>
                     <td>
@@ -100,7 +103,7 @@ const ProductsTable = () => {
                     <td>$9302</td>
                     <td>9/12/2022</td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon"><EditIcon onClick={() => functio(this)} /></div>
                     </td>
                     <td>
                         <div className="deleteIcon"><DeleteIcon /></div>
@@ -108,8 +111,8 @@ const ProductsTable = () => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check10" id="check10" />
-                        <label htmlFor="check10"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#5</td>
                     <td>
@@ -120,7 +123,7 @@ const ProductsTable = () => {
                     <td>$4990</td>
                     <td>02/03/2021</td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon"><EditIcon onClick={() => functio(this)} /></div>
                     </td>
                     <td>
                         <div className="deleteIcon"><DeleteIcon /></div>
@@ -128,8 +131,8 @@ const ProductsTable = () => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check10" id="check10" />
-                        <label htmlFor="check10"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#6</td>
                     <td>
@@ -140,7 +143,7 @@ const ProductsTable = () => {
                     <td>$4990</td>
                     <td>02/03/2021</td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon"><EditIcon onClick={() => functio(this)} /></div>
                     </td>
                     <td>
                         <div className="deleteIcon"><DeleteIcon /></div>
@@ -148,8 +151,8 @@ const ProductsTable = () => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check10" id="check10" />
-                        <label htmlFor="check10"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#7</td>
                     <td>
@@ -160,7 +163,7 @@ const ProductsTable = () => {
                     <td>$4990</td>
                     <td>02/03/2021</td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon"><EditIcon onClick={() => functio(this)} /></div>
                     </td>
                     <td>
                         <div className="deleteIcon"><DeleteIcon /></div>
@@ -168,8 +171,8 @@ const ProductsTable = () => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check10" id="check10" />
-                        <label htmlFor="check10"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#8</td>
                     <td>
@@ -180,7 +183,7 @@ const ProductsTable = () => {
                     <td>$4990</td>
                     <td>02/03/2021</td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon"><EditIcon onClick={() => functio(this)} /></div>
                     </td>
                     <td>
                         <div className="deleteIcon"><DeleteIcon /></div>
@@ -188,8 +191,8 @@ const ProductsTable = () => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check10" id="check10" />
-                        <label htmlFor="check10"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#9</td>
                     <td>
@@ -200,7 +203,7 @@ const ProductsTable = () => {
                     <td>$4990</td>
                     <td>02/03/2021</td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon"><EditIcon onClick={() => functio(this)} /></div>
                     </td>
                     <td>
                         <div className="deleteIcon"><DeleteIcon /></div>
@@ -208,8 +211,8 @@ const ProductsTable = () => {
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="check10" id="check10" />
-                        <label htmlFor="check10"></label>
+                        <input type="checkbox" name="check" />
+                        <label htmlFor="check"></label>
                     </td>
                     <td className='id'>#10</td>
                     <td>
@@ -220,7 +223,7 @@ const ProductsTable = () => {
                     <td>$4990</td>
                     <td>02/03/2021</td>
                     <td>
-                        <div className="editIcon"><EditIcon /></div>
+                        <div className="editIcon"><EditIcon onClick={() => functio(this)} /></div>
                     </td>
                     <td>
                         <div className="deleteIcon"><DeleteIcon /></div>

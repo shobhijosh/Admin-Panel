@@ -32,7 +32,7 @@ const DetailBox = () => {
 					<span className="left_details_number">500
 					</span>
 
-					<Link to='/orders/hi'>
+					<Link to='/orders'>
 						<span className="left_deatail_see_all_user">See all orders
 						</span>
 					</Link>
