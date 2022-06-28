@@ -183,7 +183,7 @@ const Products = () => {
             </div>
 
             <div id="modal">
-                <h2>Edit Order</h2>
+                <h2>Edit Product Details</h2>
                 <div className="editFields2">
                     <div className="editProductName">
                         <label htmlFor="modalProduct">Product Name</label>

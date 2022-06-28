@@ -6,7 +6,6 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import LogoutIcon from '@mui/icons-material/Logout';
-import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 
 const Sidebar = () => {
 	return (
@@ -44,10 +43,12 @@ const Sidebar = () => {
 							<span className="spanList">Sellers</span>
 						</li>
 					</Link>
-					<li className="item">
-						<PersonOutlineIcon className="icon" />
-						<span className="spanList">Earnings</span>
-					</li>
+					<Link to='/earnings'>
+						<li className="item">
+							<PersonOutlineIcon className="icon" />
+							<span className="spanList">Earnings</span>
+						</li>
+					</Link>
 					<Link to='/orders'>
 						<li className="item">
 							<ShoppingBasketIcon className="icon" />

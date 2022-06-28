@@ -29,7 +29,7 @@ const PushNotification = () => {
                             </div>
                         </div>
                         <div className="pushBtn">
-                            <a href="#"> Push Notification</a>
+                            <a href="/#"> Push Notification</a>
                         </div>
                     </div>
                 </div>

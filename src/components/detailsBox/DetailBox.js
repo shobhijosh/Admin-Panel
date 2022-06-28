@@ -66,7 +66,7 @@ const DetailBox = () => {
 					<span className="left_details_number">$7000
 					</span>
 
-					<Link to='/earning'>
+					<Link to='/earnings'>
 						<span className="left_deatail_see_all_user">See all earnings
 						</span>
 					</Link>
