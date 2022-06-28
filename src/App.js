@@ -15,6 +15,7 @@ import GoToTop from "./components/GoToTop";
 import PushNotification from "./pages/notification/PushNotification";
 import Sellers from "./pages/sellers/Sellers";
 import AddSeller from "./pages/addSeller/AddSeller";
+import AddUser from "./pages/addUser/AddUser";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="sellers" element={<Sellers />} />
         <Route path="sellers/addSeller" element={<AddSeller />} />
         <Route path="users" element={<Users />} />
+        <Route path="users/addUser" element={<AddUser />} />
         <Route path="login" element={<Login />} />
       </Routes>
     </div>
