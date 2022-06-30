@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 0.5px solid rgb(230, 227, 227);
-    background-color: #161616;
+    background-color: #f3f3f3;
+    /* background-color: linear-gradient(90deg, #00c9ff, #92fe9d); */
     /* padding: 0.5rem 1rem; */
 }
 
@@ -73,4 +74,5 @@
     column-gap: 5px;
     border-radius: 10px;
     background: #fff;
+    border: 1px solid #bbb;
 }

@@ -1,4 +1,4 @@
-.productsPage {
+.earningsPage {
     padding: 1rem;
     margin: 1rem;
     display: flex;
@@ -9,7 +9,8 @@
 .sortAndActions {
     display: flex;
     justify-content: space-between;
-    background: #fff;
+    background: #f3f3f3;
+    border: 1px solid #bbb;
     padding: 1rem;
     border-radius: 10px;
     align-items: center;
@@ -45,14 +46,16 @@ table img {
 .productsAndEarnings {
     display: flex;
     justify-content: space-between;
+    border-radius: 10px;
 }
 
 .productsAndEarnings table {
     text-align: center;
-    background: #fff;
+    background: #f3f3f3;
+    border: 1px solid #bbb;
     padding: 1rem;
     border-radius: 10px;
-    width: 80vw;
+    width: 81.2vw;
 }
 
 .productsAndEarnings table thead tr {
@@ -88,17 +91,18 @@ table img {
 .pageNum svg {
     cursor: pointer;
     transition: all 0.1s linear;
-    background-color: #fff;
+    background-color: #f3f3f3;
+    border: 1px solid #bbb;
 }
 
 .pageNum a {
     text-decoration: none;
-    padding: 0.5rem 0.9rem;
+    padding: 0.3rem 0.7rem;
     color: #000;
 }
 
 .pageNum svg {
-    padding: 0.5rem;
+    padding: 0.3rem;
     color: #4747fd;
 }
 
@@ -132,21 +136,21 @@ table img {
     column-gap: 10px;
 }
 
-.filterProducts h2 {
+/* .filterProducts h2 {
     color: #fff;
-}
+} */
 
-.keywordFilter,
+/* .keywordFilter,
 .categoryFilter,
 .priceFilter,
 .colorFilter {
-    background-color: #fff;
+    background-color: #f3f3f3;
     padding: 1rem 1.5rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-}
+} */
 
 .filters {
     display: flex;

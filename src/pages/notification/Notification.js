@@ -29,6 +29,7 @@ const Notification = () => {
 	return (
 		<div className="notification_main">
 			<Sidebar />
+			<div style={{ width: '174px' }}></div>
 			<div className="box">
 				<Navbar />
 				<div className="notificationContainer">

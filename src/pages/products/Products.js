@@ -33,6 +33,7 @@ const Products = () => {
     return (
         <div className="main">
             <Sidebar />
+            <div style={{ width: '174px' }}></div>
             <div className="container" id="Container">
                 <Navbar />
                 <div className="productsPage">

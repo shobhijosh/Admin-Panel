@@ -9,6 +9,7 @@ const AddSeller = () => {
     return (
         <div className="main">
             <Sidebar />
+            <div style={{ width: '174px' }}></div>
             <div className="container">
                 <Navbar />
                 <div className="addSellerContainer">

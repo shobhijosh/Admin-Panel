@@ -24,6 +24,7 @@ const Home = () => {
 	return (
 		<div className="main">
 			<Sidebar />
+			<div style={{ width: '174px' }}></div>
 			<div className="container">
 				<Navbar />
 				<div className="top_info">

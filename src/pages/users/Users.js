@@ -5,27 +5,14 @@ import SearchIcon from '@mui/icons-material/Search';
 import UsersTable from './UsersTable';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import CloseIcon from '@mui/icons-material/Close';
-import EditIcon from '@mui/icons-material/Edit';
 import { NavLink, Link } from 'react-router-dom';
 import './Users.css'
 
 const Users = () => {
-	const modalOpen = () => {
-		const modal = document.getElementById('modal1');
-		const container = document.getElementById('bigContainer');
-		container.style.opacity = '0.3'
-		modal.style.display = 'flex'
-	}
-	const modalClose = () => {
-		const modal = document.getElementById('modal1');
-		const container = document.getElementById('bigContainer');
-		container.style.opacity = '1'
-		modal.style.display = 'none'
-	}
 	return (
 		<div className="main">
 			<Sidebar />
+			<div style={{ width: '174px' }}></div>
 			<div className="container" id='bigContainer'>
 				<Navbar />
 				<div className="UsersPage">
@@ -57,7 +44,7 @@ const Users = () => {
 						</div>
 					</div>
 					<div className="allUsers">
-						<UsersTable modalOpen={modalOpen} />
+						<UsersTable />
 					</div>
 					<div className="pageNum">
 						<KeyboardDoubleArrowLeftIcon />
@@ -68,7 +55,7 @@ const Users = () => {
 					</div>
 				</div>
 			</div>
-			<div id="modal1">
+			{/* <div id="modal1">
 				<h2>Edit User Details</h2>
 				<div className="editFields1">
 					<div className="editBuyerOrgName">
@@ -122,7 +109,7 @@ const Users = () => {
 					<div className="editBtn"><EditIcon /> Edit Details</div>
 					<div className="closeBtn" onClick={() => modalClose()}><CloseIcon /> Close</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	)
 }

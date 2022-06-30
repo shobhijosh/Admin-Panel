@@ -3,15 +3,16 @@ import Navbar from "../../components/navbar/Navbar"
 import Datatable from "../../components/datatable/Datatable"
 import "./Order.css";
 
-const Order=()=>{
+const Order = () => {
 	return (
 		<div className="order_container">
-			<Sidebar/>
+			<Sidebar />
+			<div style={{ width: '174px' }}></div>
 			<div className="box">
-				<Navbar/>
+				<Navbar />
 				<div className="user_info">
 					<div className="user_info_left">
-						<img width="120px" height ="120px"src="https://thumbs.dreamstime.com/b/happy-smiling-geek-hipster-beard-man-cool-avatar-geek-man-avatar-104871313.jpg"/>
+						<img width="120px" height="120px" src="https://thumbs.dreamstime.com/b/happy-smiling-geek-hipster-beard-man-cool-avatar-geek-man-avatar-104871313.jpg" alt="" />
 					</div>
 					<div className="user_info_right">
 						<h1>Jane Doe</h1>
@@ -24,7 +25,7 @@ const Order=()=>{
 					</div>
 
 				</div>
-							<Datatable className="order_table"/>
+				<Datatable className="order_table" />
 
 			</div>
 		</div>);

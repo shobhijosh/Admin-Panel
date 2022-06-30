@@ -3,13 +3,13 @@ import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import { NavLink } from 'react-router-dom'
-import './earnings.css'
-import EarningsTable from '../earnings/EarningsTable';
+import { Link, NavLink } from 'react-router-dom'
+import './staticProducts.css'
+import StaticProductsTable from '../static/StaticProductsTable';
 import CloseIcon from '@mui/icons-material/Close';
 import EditIcon from '@mui/icons-material/Edit';
 
-const Earnings = () => {
+const StaticProducts = () => {
     const modalOpen = () => {
         const modal = document.getElementById('modal');
         const container = document.getElementById('Container');
@@ -28,9 +28,9 @@ const Earnings = () => {
             <div style={{ width: '174px' }}></div>
             <div className="container" id="Container">
                 <Navbar />
-                <div className="earningsPage">
+                <div className="staticProductsPage">
                     <div className="sortAndActions">
-                        <h2>All Earnings</h2>
+                        <h2>All Products</h2>
                         <div className="sortBox">
                             <select name="sorting" id="sorting">
                                 <option value="sort">Sort By</option>
@@ -46,12 +46,14 @@ const Earnings = () => {
                                 <option value="40">40</option>
                             </select>
                         </div>
-                        <div className="earningHeading">
-                            <h3>Total Earnings:$7000</h3>
+                        <div className="addSProducts">
+                            <Link to='/staticProducts/addProduct'>
+                                <span>Add Products</span>
+                            </Link>
                         </div>
                     </div>
-                    <div className="productsAndEarnings">
-                        <EarningsTable modalOpen={modalOpen} />
+                    <div className="staticProducts">
+                        <StaticProductsTable modalOpen={modalOpen} />
                     </div>
                     <div className="pageNum">
                         <KeyboardDoubleArrowLeftIcon />
@@ -66,38 +68,25 @@ const Earnings = () => {
             <div id="modal">
                 <h2>Edit Product Details</h2>
                 <div className="editFields2">
-                    <div className="editProductName">
-                        <label htmlFor="modalProduct">Product Name</label>
-                        <input type="text" name="modalProduct" id="modalProduct" placeholder="Ex-Iphone13" />
+                    <div className="staticProductsInput">
+                        <label>Product Name</label>
+                        <input type="text" placeholder="Ex-Cookie" />
                     </div>
-                    <div className="editProductCate">
-                        <label htmlFor="modalCategory">Category</label>
-                        <select name="category" id="modalCategory">
-                            <option value="select">Select Catgeory</option>
-                            <option value="NewArrival">New Arrival</option>
-                            <option value="MostPopular">Most Popular</option>
-                            <option value="Trending">Trending</option>
-                        </select>
+                    <div className="staticProductsInput">
+                        <label>Unit Of Measurement</label>
+                        <input type="text" placeholder="Ex-kg" />
                     </div>
-                    <div className="editProductExpiry">
-                        <label htmlFor="modalExpiryDate">Expiry Date</label>
-                        <input type="text" name="modalExpiryDate" id="modalExpiryDate" placeholder="Ex-No Expiry Date" />
+                    <div className="staticProductsInput">
+                        <label>Price</label>
+                        <input type="text" placeholder="Ex-$750" />
                     </div>
-                    <div className="editStockUnits">
-                        <label htmlFor="modalStock">Units in Stock</label>
-                        <input type="text" name="modalStock" id="modalStock" placeholder="Ex-100" />
-                    </div>
-                    <div className="editProductPrice">
-                        <label htmlFor="modalPrice">Price</label>
-                        <input type="text" name="modalPrice" id="modalPrice" placeholder="Ex-$750" />
-                    </div>
-                    <div className="editCommission">
-                        <label htmlFor="modalCommission">Commission</label>
-                        <input type="text" name="modalCommission" id="modalCommission" placeholder="Ex-$1000" />
+                    <div className="staticProductsInput">
+                        <label>Date</label>
+                        <input type="text" placeholder="Ex-30/06/2022" />
                     </div>
                 </div>
                 <div className="editAndCloseBtn">
-                    <div className="editBtn"><EditIcon /> Edit Order</div>
+                    <div className="editBtn"><EditIcon /> Edit Product</div>
                     <div className="closeBtn" onClick={() => modalClose()}><CloseIcon /> Close</div>
                 </div>
             </div>
@@ -105,4 +94,4 @@ const Earnings = () => {
     )
 }
 
-export default Earnings
+export default StaticProducts

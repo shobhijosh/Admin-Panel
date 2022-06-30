@@ -27,6 +27,7 @@ const Orders = () => {
 	return (
 		<div className="main">
 			<Sidebar />
+			<div style={{ width: '174px' }}></div>
 			<div className="container" id='bigContainer'>
 				<Navbar />
 				<div className="ordersPage">
@@ -81,7 +82,7 @@ const Orders = () => {
 					</div>
 				</div>
 			</div>
-			<div id="modal">
+			{/* <div id="modal">
 				<h2>Edit Order</h2>
 				<div className="editFields">
 					<div className="nameFields">
@@ -101,7 +102,7 @@ const Orders = () => {
 					<div className="editBtn"><EditIcon /> Edit Order</div>
 					<div className="closeBtn" onClick={() => modalClose()}><CloseIcon /> Close</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	)
 }

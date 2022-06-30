@@ -5,27 +5,14 @@ import SearchIcon from '@mui/icons-material/Search';
 import SellersTable from './SellersTable';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
-import CloseIcon from '@mui/icons-material/Close';
-import EditIcon from '@mui/icons-material/Edit';
 import { NavLink, Link } from 'react-router-dom';
 import './seller.css'
 
 const Sellers = () => {
-    const modalOpen = () => {
-        const modal = document.getElementById('modal1');
-        const container = document.getElementById('bigContainer');
-        container.style.opacity = '0.3'
-        modal.style.display = 'flex'
-    }
-    const modalClose = () => {
-        const modal = document.getElementById('modal1');
-        const container = document.getElementById('bigContainer');
-        container.style.opacity = '1'
-        modal.style.display = 'none'
-    }
     return (
         <div className="main">
             <Sidebar />
+            <div style={{ width: '174px' }}></div>
             <div className="container" id='bigContainer'>
                 <Navbar />
                 <div className="sellersPage">
@@ -57,7 +44,7 @@ const Sellers = () => {
                         </div>
                     </div>
                     <div className="allSellers">
-                        <SellersTable modalOpen={modalOpen} />
+                        <SellersTable />
                     </div>
                     <div className="pageNum">
                         <KeyboardDoubleArrowLeftIcon />
@@ -68,7 +55,7 @@ const Sellers = () => {
                     </div>
                 </div>
             </div>
-            <div id="modal1">
+            {/* <div id="modal1">
                 <h2>Edit Seller Details</h2>
                 <div className="editFields1">
                     <div className="editSellerName">
@@ -158,7 +145,7 @@ const Sellers = () => {
                     <div className="editBtn"><EditIcon /> Edit Details</div>
                     <div className="closeBtn" onClick={() => modalClose()}><CloseIcon /> Close</div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

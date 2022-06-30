@@ -13,7 +13,8 @@
 
 .allSellers table {
     text-align: center;
-    background: #fff;
+    background: #f3f3f3;
+    border: 1px solid #bbb;
     padding: 1rem;
     border-radius: 10px;
     width: 80vw;
@@ -23,7 +24,18 @@
     font-size: 14px;
 }
 
+.editFields1 .viewSeller input,
+.editFields1 .viewSeller select {
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+}
 
+.viewHead {
+    display: flex;
+    align-self: flex-start;
+    column-gap: 20px;
+    align-items: center;
+}
 
 .activeSeller span {
     background-color: #05b171;
@@ -40,36 +52,28 @@
     padding: 0.2rem 0.5rem;
 }
 
-#modal1 {
-    width: 900px;
-    background-color: #fff;
-    /* position: absolute; */
-    position: fixed;
-    /* top: 202px;
-    left: 445px; */
-    display: none;
-    padding: 1rem;
-    /* display: flex; */
-    flex-direction: column;
-    row-gap: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 
 .container {
     /* opacity: 0.3; */
     position: relative;
 }
 
-#modal1 .editFields1 {
+.editFields1 {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
-    column-gap: 15px;
-    row-gap: 15px;
+    /* flex-direction: column; */
+    row-gap: 20px;
+    width: 77vw;
+    column-gap: 20px;
 }
 
+.viewSeller {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 335px;
+}
 
 
 .editAndCloseBtn {
@@ -77,12 +81,6 @@
     column-gap: 20px;
 }
 
-
-
-#modal1 h2,
-.editAndCloseBtn {
-    align-self: center;
-}
 
 .editBtn,
 .closeBtn {
@@ -104,6 +102,10 @@
 .closeBtn {
     background-color: #ea4444;
     transition: all 0.1s linear;
+}
+
+.information1 .closeBtn {
+    display: none;
 }
 
 .editBtn:hover {
@@ -133,39 +135,4 @@
 
 .addSellerBtn a:hover {
     background-color: #0000fd;
-}
-
-.editSellerName,
-.editSellerCate,
-.editSellerGender,
-.editSellerAge,
-.editSellerZone,
-.editSellerWoreda,
-.editSellerKebele,
-.editSellerNumber,
-.editSellerAddiNumber,
-.editEmail,
-.editSellerBookNum,
-.editSellerTinNum {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-    width: 21vw;
-}
-
-#modalSeller,
-#modalCategory,
-#modalGender,
-#modalAge,
-#modalZone,
-#modalWoreda,
-#modalKebele,
-#modalNumber,
-#modalAddiNumber,
-#modalEmal,
-#modalBookNum,
-#modalTin {
-    padding: 0.5rem 1rem;
-    font-size: 18px;
-    outline: none;
 }

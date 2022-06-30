@@ -7,10 +7,11 @@
 	display: flex;
 	border-radius: 8px;
 	padding: 0;
-	box-shadow: 9px 8px 5px -1px rgba(0, 0, 0, 0.44);
+	/* box-shadow: 9px 8px 5px -1px rgba(0, 0, 0, 0.44);
 	-webkit-box-shadow: 9px 8px 5px -1px rgba(0, 0, 0, 0.44);
-	-moz-box-shadow: 9px 8px 5px -1px rgba(0, 0, 0, 0.44);
-	background-color: #fff;
+	-moz-box-shadow: 9px 8px 5px -1px rgba(0, 0, 0, 0.44); */
+	background-color: #f3f3f3;
+	border: 1px solid #bbb;
 }
 
 .left_deatail_see_all_user {
