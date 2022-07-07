@@ -1,4 +1,4 @@
-.sellersPage {
+.storesPage {
     padding: 1rem;
     margin: 1rem;
     display: flex;
@@ -6,12 +6,12 @@
     row-gap: 25px;
 }
 
-.allSellers {
+.allStores {
     display: flex;
     justify-content: space-between;
 }
 
-.allSellers table {
+.allStores table {
     text-align: center;
     background: #f3f3f3;
     border: 1px solid #bbb;
@@ -20,12 +20,11 @@
     width: 81.2vw;
 }
 
-.allSellers table thead tr {
+.allStores table thead tr {
     font-size: 14px;
 }
 
-.editFields1 .viewSeller input,
-.editFields1 .viewSeller select {
+.editFields1 .viewStore input {
     padding: 0.5rem 1rem;
     font-size: 18px;
 }
@@ -35,21 +34,6 @@
     align-self: flex-start;
     column-gap: 20px;
     align-items: center;
-}
-
-.activeSeller span {
-    background-color: #05b171;
-}
-
-.passive span {
-    background-color: #ea4444;
-}
-
-.activeSeller span,
-.passive span {
-    color: #fff;
-    border-radius: 20px;
-    padding: 0.2rem 0.5rem;
 }
 
 
@@ -68,11 +52,11 @@
     column-gap: 20px;
 }
 
-.viewSeller {
+.viewStore {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
-    width: 335px;
+    width: 537px;
 }
 
 
@@ -116,7 +100,7 @@
     background-color: #c73a3a;
 }
 
-.addSellerBtn a {
+.addStoreBtn a {
     text-decoration: none;
     color: #fff;
     display: flex;
@@ -129,10 +113,61 @@
     transition: all 0.1s linear;
 }
 
-.addSellerBtn {
+.addStoreBtn {
     align-self: center;
 }
 
-.addSellerBtn a:hover {
+.addStoreBtn a:hover {
     background-color: #0000fd;
+}
+
+.editStore {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 21vw;
+}
+
+.editStore input {
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    outline: none;
+}
+
+.addStoreContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.addStoreHead {
+    display: flex;
+    align-self: flex-start;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.addStoreButton {
+    background: #4747fd;
+    color: #fff;
+    padding: 0.7rem;
+    /* border-radius: 20px; */
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+.addStoreButton:hover {
+    background-color: #0000fd;
+}
+
+.addStore {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 537px;
+}
+
+.addStore input {
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    outline: none;
 }

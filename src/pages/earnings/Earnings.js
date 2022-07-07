@@ -5,6 +5,7 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import { NavLink } from 'react-router-dom'
 import './earnings.css'
+import SearchIcon from '@mui/icons-material/Search';
 import EarningsTable from '../earnings/EarningsTable';
 import CloseIcon from '@mui/icons-material/Close';
 import EditIcon from '@mui/icons-material/Edit';
@@ -31,7 +32,11 @@ const Earnings = () => {
                 <div className="earningsPage">
                     <div className="sortAndActions">
                         <h2>All Earnings</h2>
-                        <div className="sortBox">
+                        <div className="searchBox">
+                            <input type="text" name="filter" id="filter" />
+                            <SearchIcon />
+                        </div>
+                        {/* <div className="sortBox">
                             <select name="sorting" id="sorting">
                                 <option value="sort">Sort By</option>
                                 <option value="desc">Desc</option>
@@ -45,7 +50,7 @@ const Earnings = () => {
                                 <option value="30">30</option>
                                 <option value="40">40</option>
                             </select>
-                        </div>
+                        </div> */}
                         <div className="earningHeading">
                             <h3>Total Earnings:$7000</h3>
                         </div>

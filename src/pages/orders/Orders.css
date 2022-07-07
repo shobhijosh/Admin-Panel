@@ -82,7 +82,8 @@
     column-gap: 20px;
 }
 
-.editFields .viewOrder input {
+.editFields .viewOrder input,
+.editFields .viewOrder textarea {
     padding: 0.5rem 1rem;
     font-size: 18px;
 }

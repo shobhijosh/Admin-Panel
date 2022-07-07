@@ -26,10 +26,6 @@ const Products = () => {
         container.style.opacity = '1'
         modal.style.display = 'none'
     }
-    const [readMore, setReadMore] = useState(true)
-    const [readMore1, setReadMore1] = useState(true)
-    const [readMore2, setReadMore2] = useState(true)
-    const [readMore3, setReadMore3] = useState(true)
     return (
         <div className="main">
             <Sidebar />
@@ -39,7 +35,17 @@ const Products = () => {
                 <div className="productsPage">
                     <div className="sortAndActions">
                         <h2>All Products</h2>
-                        <div className="sortBox">
+                        <div className="searchBox">
+                            <input type="text" name="filter" id="filter" />
+                            <SearchIcon />
+                        </div>
+                        <div className="addProductBtn">
+                            <Link to='/Products/addProduct'>
+                                <AddCircleOutlineIcon />
+                                <span>Add Product</span>
+                            </Link>
+                        </div>
+                        {/* <div className="sortBox">
                             <select name="sorting" id="sorting">
                                 <option value="sort">Sort By</option>
                                 <option value="desc">Desc</option>
@@ -53,8 +59,8 @@ const Products = () => {
                                 <option value="30">30</option>
                                 <option value="40">40</option>
                             </select>
-                        </div>
-                        <div className="actionBox">
+                        </div> */}
+                        {/* <div className="actionBox">
                             <input type="checkbox" name="action4" id="action4" />
                             <label htmlFor="action4" className="drop">Action <ArrowDropDownIcon /></label>
                             <div className="dropDown4">
@@ -70,11 +76,11 @@ const Products = () => {
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="productsAndFilter">
                         <ProductsTable modalOpen={modalOpen} />
-                        <div className="filterProducts">
+                        {/* <div className="filterProducts">
                             <h2>Filter Products</h2>
                             <div className="filters">
                                 <div className="keywordFilter">
@@ -165,13 +171,7 @@ const Products = () => {
                                     }
                                 </div>
                             </div>
-                            <div className="addProductBtn">
-                                <Link to='/Products/addProduct'>
-                                    <AddCircleOutlineIcon />
-                                    <span>Add Product</span>
-                                </Link>
-                            </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="pageNum">
                         <KeyboardDoubleArrowLeftIcon />

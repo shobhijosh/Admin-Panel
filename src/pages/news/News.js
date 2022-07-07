@@ -7,10 +7,11 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import { NavLink } from 'react-router-dom'
 import './news.css'
+import SearchIcon from '@mui/icons-material/Search';
 
 const News = () => {
     return (
-        <div className="notification_main">
+        <div className="news_main">
             <Sidebar />
             <div style={{ width: '174px' }}></div>
             <div className="box">
@@ -18,7 +19,11 @@ const News = () => {
                 <div className="newsPage">
                     <div className="sortAndActions">
                         <h2>All News</h2>
-                        <div className="sortBox">
+                        <div className="searchBox">
+                            <input type="text" name="filter" id="filter" />
+                            <SearchIcon />
+                        </div>
+                        {/* <div className="sortBox">
                             <select name="sorting" id="sorting">
                                 <option value="sort">Sort By</option>
                                 <option value="desc">Desc</option>
@@ -32,7 +37,7 @@ const News = () => {
                                 <option value="30">30</option>
                                 <option value="40">40</option>
                             </select>
-                        </div>
+                        </div> */}
                         <div className="addNewsBtn">
                             <Link to='/news/push'>
                                 <span>Push News</span>

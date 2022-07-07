@@ -26,6 +26,8 @@ import Admins from "./pages/admins/Admins";
 import AddAdmin from "./pages/admins/AddAdmin";
 import StaticProducts from "./pages/static/StaticProducts";
 import AddStaticProduct from "./pages/static/AddStaticProduct";
+import Stores from "./pages/stores/Stores";
+import AddStore from "./pages/stores/AddStore";
 
 
 function App() {
@@ -50,6 +52,9 @@ function App() {
         <Route path="sellers" element={<Sellers />} />
         <Route path="sellers/addSeller" element={<AddSeller />} />
         <Route path="viewSeller" element={<ViewSeller />} />
+        <Route path="stores" element={<Stores />} />
+        <Route path="stores/addStore" element={<AddStore />} />
+        {/* <Route path="stores/addStore" element={ } /> */}
         <Route path="users" element={<Users />} />
         <Route path="users/addUser" element={<AddUser />} />
         <Route path="viewUser" element={<ViewUser />} />

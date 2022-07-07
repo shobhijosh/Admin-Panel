@@ -8,6 +8,7 @@ import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArro
 import { NavLink } from 'react-router-dom'
 import CloseIcon from '@mui/icons-material/Close';
 import EditIcon from '@mui/icons-material/Edit';
+import SearchIcon from '@mui/icons-material/Search';
 import './admins.css'
 
 const Admins = () => {
@@ -32,7 +33,11 @@ const Admins = () => {
                 <div className="adminsPage">
                     <div className="sortAndActions">
                         <h2>All Admins</h2>
-                        <div className="sortBox">
+                        <div className="searchBox">
+                            <input type="text" name="filter" id="filter" />
+                            <SearchIcon />
+                        </div>
+                        {/* <div className="sortBox">
                             <select name="sorting" id="sorting">
                                 <option value="sort">Sort By</option>
                                 <option value="desc">Desc</option>
@@ -46,7 +51,7 @@ const Admins = () => {
                                 <option value="30">30</option>
                                 <option value="40">40</option>
                             </select>
-                        </div>
+                        </div> */}
                         <div className="addAdminBtn">
                             <Link to='/admins/addAdmin'>
                                 <span>Add Admin</span>

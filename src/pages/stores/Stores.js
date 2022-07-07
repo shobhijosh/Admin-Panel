@@ -2,22 +2,36 @@ import React from 'react'
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
 import SearchIcon from '@mui/icons-material/Search';
-import SellersTable from './SellersTable';
+import StoresTable from './StoresTable';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
+import CloseIcon from '@mui/icons-material/Close';
+import EditIcon from '@mui/icons-material/Edit';
 import { NavLink, Link } from 'react-router-dom';
-import './seller.css'
+import './stores.css'
 
-const Sellers = () => {
+const Stores = () => {
+    const modalOpen = () => {
+        const modal = document.getElementById('modal');
+        const container = document.getElementById('Container');
+        container.style.opacity = '0.3'
+        modal.style.display = 'flex'
+    }
+    const modalClose = () => {
+        const modal = document.getElementById('modal');
+        const container = document.getElementById('Container');
+        container.style.opacity = '1'
+        modal.style.display = 'none'
+    }
     return (
         <div className="main">
             <Sidebar />
             <div style={{ width: '174px' }}></div>
-            <div className="container" id='bigContainer'>
+            <div className="container" id='Container'>
                 <Navbar />
-                <div className="sellersPage">
+                <div className="storesPage">
                     <div className="sortAndActions">
-                        <h2>Sellers List</h2>
+                        <h2>Stores List</h2>
                         {/* <div className="sortBox">
                             <select name="sorting" id="sorting">
                                 <option value="sort">Sort By</option>
@@ -37,14 +51,14 @@ const Sellers = () => {
                             <input type="text" name="filter" id="filter" />
                             <SearchIcon />
                         </div>
-                        <div className="addSellerBtn">
-                            <Link to='/sellers/addSeller'>
-                                <span>Add Seller</span>
+                        <div className="addStoreBtn">
+                            <Link to='/stores/addStore'>
+                                <span>Add Stores</span>
                             </Link>
                         </div>
                     </div>
-                    <div className="allSellers">
-                        <SellersTable />
+                    <div className="allStores">
+                        <StoresTable modalOpen={modalOpen} />
                     </div>
                     <div className="pageNum">
                         <KeyboardDoubleArrowLeftIcon />
@@ -53,6 +67,27 @@ const Sellers = () => {
                         <NavLink to='#'>3</NavLink>
                         <KeyboardDoubleArrowRightIcon />
                     </div>
+                </div>
+            </div>
+            <div id="modal">
+                <h2>Edit Store Details</h2>
+                <div className="editFields2">
+                    <div className="editStore">
+                        <label>Store Name</label>
+                        <input type="text" placeholder="Ex-JBM Supermall" />
+                    </div>
+                    <div className="editStore">
+                        <label>Store Location</label>
+                        <input type="text" placeholder="Ex-Street 13 near hotel sun" />
+                    </div>
+                    <div className="editStore">
+                        <label>Store Capacity</label>
+                        <input type="text" placeholder="Ex-10000 items" />
+                    </div>
+                </div>
+                <div className="editAndCloseBtn">
+                    <div className="editBtn"><EditIcon /> Edit Details</div>
+                    <div className="closeBtn" onClick={() => modalClose()}><CloseIcon /> Close</div>
                 </div>
             </div>
             {/* <div id="modal1">
@@ -146,8 +181,9 @@ const Sellers = () => {
                     <div className="closeBtn" onClick={() => modalClose()}><CloseIcon /> Close</div>
                 </div>
             </div> */}
+
         </div>
     )
 }
 
-export default Sellers
+export default Stores

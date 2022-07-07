@@ -8,6 +8,7 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import FeedIcon from '@mui/icons-material/Feed';
 import LogoutIcon from '@mui/icons-material/Logout';
 import SettingsIcon from '@mui/icons-material/Settings';
+import WidgetsIcon from '@mui/icons-material/Widgets';
 
 const Sidebar = () => {
 	return (
@@ -55,6 +56,18 @@ const Sidebar = () => {
 						<NavLink to='/orders'>
 							<ShoppingBasketIcon className="icon" />
 							<span className="spanList">Orders</span>
+						</NavLink>
+					</li>
+					<li className="item">
+						<NavLink to='/stores'>
+							<StoreMallDirectoryIcon className="icon" />
+							<span className="spanList">Stores</span>
+						</NavLink>
+					</li>
+					<li className="item">
+						<NavLink to='/categories'>
+							<WidgetsIcon className="icon" />
+							<span className="spanList">Categories</span>
 						</NavLink>
 					</li>
 					<li className="item">

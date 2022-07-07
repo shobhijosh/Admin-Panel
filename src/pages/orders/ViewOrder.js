@@ -10,12 +10,14 @@ const ViewOrder = () => {
     const editOrder = () => {
         const input = document.querySelectorAll('input');
         document.getElementById('cls').style.display = "flex"
+        document.querySelectorAll('textarea')[0].disabled = false;
         for (let i = 0; i < input.length; i++) {
             input[i].disabled = false
         }
     }
     const closeEdit = () => {
         const input = document.querySelectorAll('input');
+        document.querySelectorAll('textarea')[0].disabled = true;
         document.getElementById('cls').style.display = "none"
         for (let i = 0; i < input.length; i++) {
             input[i].disabled = true
@@ -69,6 +71,10 @@ const ViewOrder = () => {
                             <div className="viewOrder">
                                 <label >Status</label>
                                 <input type="text" disabled placeholder='Shipped' />
+                            </div>
+                            <div className="viewOrder">
+                                <label> Address</label>
+                                <textarea disabled rows='3' placeholder="Ex-Bole Subcity Kebele 14 H.No179/B Addis Ababa 7512"></textarea>
                             </div>
                         </div>
                         <div className="editAndCloseBtn">

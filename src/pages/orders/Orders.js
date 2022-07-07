@@ -33,7 +33,7 @@ const Orders = () => {
 				<div className="ordersPage">
 					<div className="sortAndActions">
 						<h2>All Orders</h2>
-						<div className="sortBox">
+						{/* <div className="sortBox">
 							<select name="sorting" id="sorting">
 								<option value="sort">Sort By</option>
 								<option value="desc">Desc</option>
@@ -47,7 +47,7 @@ const Orders = () => {
 								<option value="30">30</option>
 								<option value="40">40</option>
 							</select>
-						</div>
+						</div> */}
 						<div className="searchBox">
 							<input type="text" name="filter" id="filter" />
 							<SearchIcon />
